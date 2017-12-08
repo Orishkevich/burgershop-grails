@@ -12,12 +12,9 @@
         <header class="main">
             <div class="logo_line"></div>
             <asset:image src="logo.png"/>
-
-
             <g:form controller="home">
-                <g:actionSubmit value="${message(code: "burger")}" action="clickShop" class="but"/>
+                <g:actionSubmit value="${message(code: "burger")}" action="shop" class="but"/>
             </g:form>
-
         </header>
     </div>
     <section class="main">
