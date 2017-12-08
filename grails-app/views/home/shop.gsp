@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<%@ taglib uri="http://www.anotheria.net/ano-tags" prefix="ano" %>
+%{--<%@ taglib uri="http://www.anotheria.net/ano-tags" prefix="ano" %>--}%
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -21,7 +21,95 @@
         </div>
     </h1>
 </header>
-<table cellpadding="0" cellspacing="0">
+
+<g:if test="${items}">
+    <table cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr name="BREAD" id="bread">
+           <script>
+        var jsonItems = JSON.parse('${raw(items as String)}');
+        jsonItems.forEach(function (item) {
+            var count = 0;
+            if (item["category"]["name"] == "BREAD") {
+                var td1 = document.createElement('td');
+                td1.className=item["name"];
+                document.getElementById('bread').appendChild(td1);
+                var divPrice = document.createElement('div');
+                divPrice.className="price";
+                document.querySelector("."+item["name"]).appendChild(divPrice);
+                var spanPrice = document.createElement('span');
+                spanPrice.innerHTML = item["price"];
+                document.querySelector("."+item["name"]).querySelectorAll('div')[0].appendChild(spanPrice);
+                var divName = document.createElement('div');
+                divName.className="item_name";
+                document.querySelector("."+item["name"]).appendChild(divName);
+                var pName = document.createElement('p');
+                pName.innerHTML = item["name"];
+                document.querySelector("."+item["name"]).querySelectorAll('div')[1].appendChild(pName);
+                count+=1;
+                console.log(count);
+            }
+        });
+    </script>
+        </tr>
+        <tr name="MEAT" id="meat">
+            <script>
+                var jsonItems = JSON.parse('${raw(items as String)}');
+                jsonItems.forEach(function (item) {
+                    var count = 0;
+                    if (item["category"]["name"] == "MEAT") {
+                        var td1 = document.createElement('td');
+                        td1.className=item["name"];
+                        document.getElementById('bread').appendChild(td1);
+                        var divPrice = document.createElement('div');
+                        divPrice.className="price";
+                        document.querySelector("."+item["name"]).appendChild(divPrice);
+                        var spanPrice = document.createElement('span');
+                        spanPrice.innerHTML = item["price"];
+                        document.querySelector("."+item["name"]).querySelectorAll('div')[0].appendChild(spanPrice);
+                        var divName = document.createElement('div');
+                        divName.className="item_name";
+                        document.querySelector("."+item["name"]).appendChild(divName);
+                        var pName = document.createElement('p');
+                        pName.innerHTML = item["name"];
+                        document.querySelector("."+item["name"]).querySelectorAll('div')[1].appendChild(pName);
+                        count+=1;
+                        console.log(count);
+                    }
+                });
+            </script>
+        </tr>
+        <tr name="EXTRAS" id="extra">
+            <script>
+                var jsonItems = JSON.parse('${raw(items as String)}');
+                jsonItems.forEach(function (item) {
+                    var count = 0;
+                    if (item["category"]["name"] == "EXTRA") {
+                        var td1 = document.createElement('td');
+                        td1.className=item["name"];
+                        document.getElementById('bread').appendChild(td1);
+                        var divPrice = document.createElement('div');
+                        divPrice.className="price";
+                        document.querySelector("."+item["name"]).appendChild(divPrice);
+                        var spanPrice = document.createElement('span');
+                        spanPrice.innerHTML = item["price"];
+                        document.querySelector("."+item["name"]).querySelectorAll('div')[0].appendChild(spanPrice);
+                        var divName = document.createElement('div');
+                        divName.className="item_name";
+                        document.querySelector("."+item["name"]).appendChild(divName);
+                        var pName = document.createElement('p');
+                        pName.innerHTML = item["name"];
+                        document.querySelector("."+item["name"]).querySelectorAll('div')[1].appendChild(pName);
+                        count+=1;
+                        console.log(count);
+                    }
+                });
+            </script>
+        </tr>
+        </tbody>
+    </table>
+</g:if>
+%{--<table cellpadding="0" cellspacing="0">
     <tbody>
     <tr>
         <ano:iterate name="BREAD" id="bread" type="de.zaunberg.burgershop.ui.ShopItemBean">
@@ -75,7 +163,7 @@
         </ano:iterate>
     </tr>
     </tbody>
-</table>
+</table>--}%
 
 <div class="total_cost">
     <div></div>

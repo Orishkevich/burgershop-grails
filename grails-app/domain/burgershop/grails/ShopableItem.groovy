@@ -6,7 +6,7 @@ class ShopableItem {
 
     String name
 
-    String category
+    Category category
 
     static constraints = {
     }

@@ -234,63 +234,63 @@ table tr td:hover, table tr td.active_item {
 }
 
 .wheat {
-    background: url("../web-app/img/line1/wheat.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line1/wheat.gif") 0 0 no-repeat transparent;
 }
 
 .wholemeal {
-    background: url("../web-app/img/line1/wholemeal.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line1/wholemeal.gif") 0 0 no-repeat transparent;
 }
 
 .burned {
-    background: url("../web-app/img/line1/burned.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line1/burned.gif") 0 0 no-repeat transparent;
 }
 
 .leibniz {
-    background: url("../web-app/img/line1/leibniz.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line1/leibniz.gif") 0 0 no-repeat transparent;
 }
 
 .brioche {
-    background: url("../web-app/img/line1/brioche.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line1/brioche.gif") 0 0 no-repeat transparent;
 }
 
 .cow {
-    background: url("../web-app/img/line2/cow.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line2/cow.gif") 0 0 no-repeat transparent;
 }
 
 .pork {
-    background: url("../web-app/img/line2/pork.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line2/pork.gif") 0 0 no-repeat transparent;
 }
 
 .dog {
-    background: url("../web-app/img/line2/dog.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line2/dog.gif") 0 0 no-repeat transparent;
 }
 
 .lamb {
-    background: url("../web-app/img/line2/lamb.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line2/lamb.gif") 0 0 no-repeat transparent;
 }
 
 .rat {
-    background: url("../web-app/img/line2/rat.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line2/rat.gif") 0 0 no-repeat transparent;
 }
 
 .cockroach {
-    background: url("../web-app/img/line3/cockroach.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line3/cockroach.gif") 0 0 no-repeat transparent;
 }
 
 .mushrooms {
-    background: url("../web-app/img/line3/mushrooms.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line3/mushrooms.gif") 0 0 no-repeat transparent;
 }
 
 .broccoli {
-    background: url("../web-app/img/line3/broccoli.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line3/broccoli.gif") 0 0 no-repeat transparent;
 }
 
 .cheese {
-    background: url("../web-app/img/line3/cheese.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line3/cheese.gif") 0 0 no-repeat transparent;
 }
 
 .sauce {
-    background: url("../web-app/img/line3/sauce.gif") 0 0 no-repeat transparent;
+    background: url("/assets/line3/sauce.gif") 0 0 no-repeat transparent;
 }
 
 .item_name div {
