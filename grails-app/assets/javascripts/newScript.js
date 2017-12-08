@@ -19,11 +19,11 @@ $(document).ready(function(){
         prices[tr_index] = parseFloat($(this).find(".price span").text());
         var total_price = 0;
         $.each(prices, function(index, price){
-            total_price += price;
+            total_price += price/100;
         });
         $(".total_cost p span").text(total_price.toFixed(2) + ' EUR');
         var $nextLine = $(this).closest('tr').next();
-        if($nextLine.length > 0){
+        if($nextLine.length > 0 && $nextLine[0].tagName.toLowerCase()!= "script"){
             $nextLine.show();
             if(!$(this).closest('tr').hasClass('step_done')){
                 $('#step_index').text(++step);

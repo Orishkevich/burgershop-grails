@@ -24,5 +24,6 @@
         <asset:image src="advertise_block.png"/>
     </section>
 </div>
+
 </body>
 </html>
