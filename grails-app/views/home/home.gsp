@@ -18,7 +18,7 @@
         </header>
     </div>
     <section class="main">
-        <asset:image src="advertise_block.png"/>
+        <asset:image src="/advertise_block.png"/>
     </section>
 </div>
 

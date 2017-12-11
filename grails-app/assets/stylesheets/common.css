@@ -44,12 +44,11 @@ a:hover {
 
 @font-face {
     font-family: 'channel_slanted_2regular';
-    src: url('../fonts/channel_slanted2-webfont.eot');
-    src: url('../fonts/channel_slanted2-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/channel_slanted2-webfont.woff') format('woff'), url('../fonts/channel_slanted2-webfont.ttf') format('truetype'), url('../fonts/channel_slanted2-webfont.svg#channel_slanted_2regular') format('svg');
+    src: url('/assets/channel_slanted2-webfont.eot');
+    src: url('/assets/channel_slanted2-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/channel_slanted2-webfont.woff') format('woff'), url('/assets/channel_slanted2-webfont.ttf') format('truetype'), url('/assets/channel_slanted2-webfont.svg#channel_slanted_2regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-
 .bg_main {
     background-color: #e2ccbb;
     height: 100%;

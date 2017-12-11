@@ -6,19 +6,19 @@ buildscript {
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:2.14.1"
-        classpath "org.grails.plugins:hibernate5:${gormVersion-".RELEASE"}"
+        classpath "org.grails.plugins:hibernate5:${gormVersion - ".RELEASE"}"
     }
 }
 
 version "0.1"
 group "burgershop.grails"
 
-apply plugin:"eclipse"
-apply plugin:"idea"
-apply plugin:"war"
-apply plugin:"org.grails.grails-web"
-apply plugin:"org.grails.grails-gsp"
-apply plugin:"asset-pipeline"
+apply plugin: "eclipse"
+apply plugin: "idea"
+apply plugin: "war"
+apply plugin: "org.grails.grails-web"
+apply plugin: "org.grails.grails-gsp"
+apply plugin: "asset-pipeline"
 
 project.ext {
     moskitoVersion = '2.8.4'
@@ -58,14 +58,6 @@ dependencies {
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
 
-//    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.5'
-//    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.0.13'
-//    testCompile group: 'junit', name: 'junit', version: '4.5'
-//    compile group: 'net.anotheria', name: 'ano-util', version: '2.1.8'
-//    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
-//    compile group: 'net.anotheria', name: 'moskito-util', version: '1.5.1'
-//    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.10.0'
-//    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.10.0'
     compile group: 'net.anotheria', name: 'moskito-web', version: moskitoVersion
     compile group: 'net.anotheria', name: 'moskito-inspect-embedded', version: moskitoVersion
     compile group: 'net.anotheria', name: 'moskito-inspect-jersey', version: moskitoVersion
@@ -74,6 +66,15 @@ dependencies {
     compile group: 'net.anotheria', name: 'moskito-inspect-remote', version: moskitoVersion
     compile group: 'net.anotheria', name: 'moskito-webui', version: moskitoVersion
     compile group: 'org.moskito', name: 'moskito-control-agent', version: moskitoAgentVersion
+    compile group: 'net.anotheria', name: 'ano-util', version: '2.1.8'
+    compile group: 'net.anotheria', name: 'moskito-util', version: '1.5.1'
+
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.10.0'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.10.0'
+    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
+    //compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.5'
+    //compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.0.13'
+    //testCompile group: 'junit', name: 'junit', version: '4.5'
 
 
 }
